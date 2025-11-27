@@ -1,0 +1,113 @@
+/* --- Estilos de la Página de Galería de Categorías (Efecto Polaroid) --- */
+
+.galeria-container {
+    padding: 80px var(--container-padding);
+    text-align: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+/* Usando la fuente de títulos Playfair Display */
+.galeria-container .gallery-title {
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--brown);
+    margin-bottom: 8px;
+}
+
+.galeria-sub {
+    font-size: 18px;
+    color: var(--muted-green);
+    margin-bottom: 50px;
+}
+
+.polaroid-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+/* El enlace <a> con la clase .polaroid es el elemento clave */
+.polaroid {
+    background: var(--cream); /* El fondo actúa como el borde blanco */
+    padding: 15px 15px 25px;
+    width: 260px;
+    box-shadow: 0px 8px 18px rgba(30, 25, 20, 0.15); 
+    border-radius: 4px;
+    /* La rotación que solicitaste */
+    transform: rotate(-2deg); 
+    transition: all 0.3s ease; 
+    text-decoration: none;
+    color: inherit;
+    /* Para que las subcategorías sean enlaces que se vean como Polaroids */
+    display: block; 
+}
+
+/* Variaciones de rotación para un aspecto más orgánico */
+.polaroid:nth-child(2) {
+    transform: rotate(1.5deg);
+}
+
+.polaroid:nth-child(3) {
+    transform: rotate(-1deg);
+}
+
+.polaroid img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 3px;
+    /* Filtro de color para mantener la estética */
+    filter: grayscale(0.1) sepia(0.05) contrast(0.95);
+    display: block;
+}
+
+.polaroid .caption {
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: var(--dark);
+    letter-spacing: 0.5px;
+}
+
+/* Efecto Hover */
+.polaroid:hover {
+    transform: scale(1.05) rotate(0deg); /* Se endereza y agranda */
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+
+/* Estilo para el enlace activo en la navegación */
+.main-nav a.active{
+    color: var(--brown);
+    font-weight: 600;
+    position: relative;
+}
+
+.main-nav a.active::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--accent-pink);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border-radius: 1px;
+}
+
+/* Media Queries para que las polaroids se vean bien en móvil */
+@media (max-width: 600px) {
+    .polaroid-grid {
+        gap: 30px;
+    }
+    .polaroid {
+        width: 80%; /* Ocupa un buen porcentaje del ancho */
+        transform: rotate(0deg) !important; /* Desactiva la rotación en móvil para mejor legibilidad */
+    }
+}

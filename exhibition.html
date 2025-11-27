@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <title>Portafolio — Exhibition</title>
+      <meta name="description" content="Una selección de imágenes de estilo editorial y lifestyle." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="icon/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">maaar<span>.media</span></a>
+      <nav class="main-nav">
+        <a href="index.html">Inicio</a>
+        <a href="galeria.html" class="active">Galería</a>
+        <a href="videos.html">Videos</a>
+        <a href="sobremi.html">Sobre mí</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html" class="btn-ghost">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="exhibition container">
+        <h1 class="gallery-title">Exhibition — Restaurantes, Comida y Eventos</h1> 
+        <p class="galeria-sub">Imágenes editoriales de gastronomía, espacios comerciales y cobertura de eventos.</p>
+
+   
+        <div class="exhibition-grid">
+            <figure class="exhibition-item">
+                <img src="img/fotoa.jpg" alt="Foto Editorial 1" loading="lazy">
+                <figcaption class="photo-caption">Cumpleaños de Pedro.</figcaption>
+            </figure>
+            <figure class="exhibition-item">
+                <img src="img/fotob.jpg" alt="Foto Editorial 2" loading="lazy">
+                <figcaption class="photo-caption">Bobo Restaurante.</figcaption>
+            </figure>
+            <figure class="exhibition-item">
+                <img src="img/fotoc.jpg" alt="Foto Editorial 3" loading="lazy">
+                <figcaption class="photo-caption">Opening Night.</figcaption>
+            </figure>
+            <figure class="exhibition-item">
+                <img src="img/fotod.jpg" alt="Foto Editorial 4" loading="lazy">
+                <figcaption class="photo-caption">Dj Set.</figcaption>
+            </figure>
+            <figure class="exhibition-item">
+                <img src="img/fotoe.jpg" alt="Foto Editorial 5" loading="lazy">
+                <figcaption class="photo-caption">Travieso TRavieso Travieso Night.</figcaption>
+            </figure>
+            <figure class="exhibition-item">
+                <img src="img/fotof.jpg" alt="Foto Editorial 6" loading="lazy">
+                <figcaption class="photo-caption">Golden Bread.</figcaption>
+            </figure>
+            
+        </div>
+        
+    </section>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo footer-logo" href="index.html">maaar<span>.media</span></a>
+        <p class="muted">Portafolio Shahari ✴︎ visual storytelling</p>
+      </div>
+      <div>
+        <h4>Enlaces</h4>
+        <nav class="footer-nav">
+          <a href="galeria.html">Galería</a>
+          <a href="videos.html">Videos</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+         <section class="tny-contact">
+          <div class="tn-icon">
+            <a href="https://www.instagram.com/maaar.media/" target="_blank">
+              <img src="icon/instagram.png" title="instagram">
+            </a>
+          </div>
+          <div class="tn-icon">
+            <a href="https://mx.pinterest.com/shamaaar/_profile/_created/" target="_blank">
+              <img src="icon/pinterest.png" title="Pinterest">
+            </a>
+          </div>
+          <div class="tn-icon">
+            <a href="https://www.linkedin.com/in/sarah-shahari-martinez-lopez-53b48a364/" target="_blank">
+              <img src="icon/linkedin.png" title="Linkedin">
+            </a>
+          </div>
+        </section>
+        <p class="muted">sarahmaaar@icloud.com</p>
+      </div>
+    </div>
+    <div class="legal">© <span id="year"></span> maaar.media</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

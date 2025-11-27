@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+<head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <title>Portafolio — Videos</title>
+      <meta name="description" content="Galería de videos y contenido audiovisual de Maaar Visual Arts." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+ <link rel="icon" type="image/png" href="icon/favicon.png">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">maaar<span>.media</span></a>
+      <nav class="main-nav">
+        <a href="index.html">Inicio</a>
+        <a href="galeria.html">Galería</a>
+        <a href="videos.html" class="active">Videos</a>
+        <a href="sobremi.html">Sobre mí</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html" class="btn-ghost">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="video-hero container">
+        <div class="hero-grid">
+            <div class="hero-text">
+                <p class="kicker">Perfil de Creador</p>
+                <h1 class="gallery-title">Mi Contenido Audiovisual</h1>
+                <p class="lead">Explora mis videos de viajes, lifestyle y narrativa visual. Encuentra más de mi trabajo en mi canal de YouTube.</p>
+                <a href="https://www.youtube.com/@shaharimartinez" class="btn-primary" target="_blank">Ver Mi Canal de YouTube</a>
+            </div>
+            
+            <div class="video-item">
+                <div class="video-responsive">
+                   <iframe 
+    src="https://www.youtube.com/embed/jueUpRx1qU0" 
+    title="Mi Video Personal" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen
+></iframe>
+                </div>
+                <h3>Mi Último Cortometraje</h3>
+                <p>Una pieza de video-arte con mi estilo visual.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="inspiration-section container">
+        <h2 class="gallery-title">Gente que me inspira</h2>
+        <p class="galeria-sub">Creadores, fotógrafos y artistas que admiro. ¡Su trabajo es una fuente constante de ideas!</p>
+        
+        <div class="inspiration-grid grid-4-items"> 
+            
+            <div class="collaborator-card">
+                <img src="img/rafa.png" alt="Foto de Rafa Salsas" loading="lazy">
+                <h3>Rafa Salsas</h3>
+                <p>Contenido de cultura pop y análisis audiovisual.</p>
+                <a href="https://www.instagram.com/rafasalsas/" class="btn-outline" target="_blank">Ver Instagram</a>
+            </div>
+
+            <div class="collaborator-card">
+                <img src="img/kade.png" alt="Foto de Kade Chance" loading="lazy">
+                <h3>Kade Chance</h3>
+                <p>Música, beats y fotografía de viajes.</p>
+                <a href="https://www.instagram.com/kadechance___/" class="btn-outline" target="_blank">Ver Instagram</a>
+            </div>
+
+            <div class="collaborator-card">
+                <img src="img/amm.png" alt="Foto de AMM Films" loading="lazy">
+                <h3>AMM Films</h3>
+                <p>Director y guionista de cine y comerciales.</p>
+                <a href="https://www.instagram.com/amm.films/" class="btn-outline" target="_blank">Ver Instagram</a>
+            </div>
+            
+            <div class="collaborator-card">
+                <img src="img/luciana.png" alt="Foto de Luciana Moreno Mora" loading="lazy">
+                <h3>Luciana Moreno Mora</h3>
+                <p>Fotógrafa de moda y retratos minimalistas.</p>
+                <a href="https://www.instagram.com/lucianamorenomora/" class="btn-outline" target="_blank">Ver Instagram</a>
+            </div>
+            
+        </div>
+    </section>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo footer-logo" href="index.html">maaar<span>.media</span></a>
+        <p class="muted">Portafolio Shahari ✴︎ visual storytelling</p>
+      </div>
+      <div>
+        <h4>Enlaces</h4>
+        <nav class="footer-nav">
+          <a href="galeria.html">Galería</a>
+          <a href="videos.html">videos</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+         <section class="tny-contact">
+          <div class="tn-icon">
+            <a href="https://www.instagram.com/maaar.media/" target="_blank">
+              <img src="icon/instagram.png" title="instagram">
+            </a>
+          </div>
+          <div class="tn-icon">
+            <a href="https://mx.pinterest.com/shamaaar/_profile/_created/" target="_blank">
+              <img src="icon/pinterest.png" title="Pinterest">
+            </a>
+          </div>
+          <div class="tn-icon">
+            <a href="https://www.linkedin.com/in/sarah-shahari-martinez-lopez-53b48a364/" target="_blank">
+              <img src="icon/linkedin.png" title="Linkedin">
+            </a>
+          </div>
+        </section>
+        <p class="muted">sarahmaaar@icloud.com</p>
+      </div>
+    </div>
+    <div class="legal">© <span id="year"></span> maaar.media</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

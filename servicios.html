@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <title>Servicios — maaar.media</title>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="icon" type="image/png" href="icon/favicon.png">
+      <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">maaar<span>.media</span></a>
+      <nav class="main-nav">
+        <a href="index.html">Inicio</a>
+        <a href="galeria.html">Galería</a>
+        <a href="videos.html">Videos</a>
+        <a href="sobremi.html">Sobre mí</a>
+        <a href="servicios.html" class="active">Servicios</a>
+        <a href="contacto.html" class="btn-ghost">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="services container">
+      <h1 class="services-title">Servicios</h1>
+      <p class="services-sub">Trabajo visual enfocado en narrativa, estética editorial y documentación real.</p>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <h3>Fotografía Editorial</h3>
+          <p>Retratos, conceptos visuales y sesiones con estética limpia, delicada y minimalista.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Documental & Lifestyle</h3>
+          <p>Historias reales, viajes, memoria urbana y momentos cotidianos con un tono narrativo.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Gastronomía & Restaurantes</h3>
+          <p>Platos, espacios, branding visual y contenido para proyectos culinarios.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Eventos Pequeños</h3>
+          <p>Cobertura discreta y estética para eventos íntimos, creativos o culturales.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Videos Cortos</h3>
+          <p>Mini-documentales, reels, piezas atmosféricas y motion editorial.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo footer-logo" href="index.html">maaar<span>.media</span></a>
+        <p class="muted">Portafolio Shahari ✴︎ visual storytelling</p>
+      </div>
+      <div>
+        <h4>Enlaces</h4>
+        <nav class="footer-nav">
+          <a href="galeria.html">Galería</a>
+          <a href="videos.html">Videos</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+         <section class="tny-contact">
+          <div class="tn-icon">
+            <a href="https://www.instagram.com/maaar.media/" target="_blank">
+              <img src="icon/instagram.png" title="instagram">
+            </a>
+          </div>
+          <div class="tn-icon">
+            <a href="https://mx.pinterest.com/shamaaar/_profile/_created/" target="_blank">
+              <img src="icon/pinterest.png" title="Pinterest">
+            </a>
+          </div>
+          <div class="tn-icon">
+            <a href="https://www.linkedin.com/in/sarah-shahari-martinez-lopez-53b48a364/" target="_blank">
+              <img src="icon/linkedin.png" title="Linkedin">
+            </a>
+          </div>
+        </section>
+        <p class="muted">sarahmaaar@icloud.com</p>
+      </div>
+    </div>
+    <div class="legal">© <span id="year"></span> maaar.media</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
